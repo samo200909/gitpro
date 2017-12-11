@@ -1,6 +1,4 @@
-<?php
-
-defined('ACCES') or die('Access error');
+<?php defined('ACCES') or die('Access error');
 
 class DB
 {
@@ -14,7 +12,6 @@ class DB
      */
     protected function __construct()
     {
-
         $db = [
             'engine'   => 'mysql',
             'host'     => 'localhost',

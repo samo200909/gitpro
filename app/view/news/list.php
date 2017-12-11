@@ -1,10 +1,17 @@
 <?php defined('ACCES') or die('Access error'); ?>
-
-<div class="container">
+<div class="col-12 col-md-9 container">
+    <div class="jumbotron">
+        <h1>Новости</h1>
+        <?php if(Session::exists()): ?>
+        <a class="btn btn-primary float-right" href="<?=SITE?>news/add" role="button">Добавить</a>
+        <?php endif; ?>
+    </div>
 
     <div class="row">
+
         <?php foreach($allNews as $item): ?>
-        <div class="col-lg-4">
+        <div class="col-2 "></div>
+        <div class="col-8 " style="margin-top: 20px">
             <h2><?=mb_substr($item['name'],0,50)?></h2>
             <p><?=mb_substr($item['text'],0,300)?></p>
             <p>
@@ -15,9 +22,10 @@
                 <?php endif; ?>
             </p>
         </div>
+            <div class="col-2 "></div>
         <?php endforeach; ?>
+
     </div>
-
-    <hr class="featurette-divider">
-
 </div>
+
+<hr class="featurette-divider">

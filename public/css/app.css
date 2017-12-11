@@ -1,0 +1,32 @@
+body {
+    padding-top: 4.5rem;
+}
+
+
+@media (max-width: 576px) {
+    .cont{
+        margin-left:0px;
+        position:static;
+    }
+}
+
+@media (min-width: 62em) {
+    .featurette-heading {
+        margin-top: 7rem;
+    }
+
+}
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+    margin: 2rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -.05rem;
+}
