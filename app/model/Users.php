@@ -2,7 +2,7 @@
 
 class Users
 {
-    protected static $table = "users1";
+    protected static $table = "users";
     /**
      * @param $param
      * @return mixed
