@@ -28,3 +28,12 @@ function location($path){
     @header("Location: ".$path);
     exit;
 }
+
+//Log
+function getLog(){
+    echo "<pre>";
+        print_r(DB::log());
+    echo "</pre>";
+}
+
+//register_shutdown_function('getLog');
